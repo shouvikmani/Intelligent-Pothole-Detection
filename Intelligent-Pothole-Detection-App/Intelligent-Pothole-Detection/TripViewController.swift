@@ -19,6 +19,7 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     @IBOutlet weak var numPotholesLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var accelerometerLabel: UILabel!
+    @IBOutlet weak var gyroLabel: UILabel!
     
     var trip: Trip!
     var dataRecipientEmail: String!
@@ -29,12 +30,13 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.shared.isIdleTimerDisabled = true
+        UIApplication.shared.isIdleTimerDisabled = true  // Prevents sleep mode
         
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         motionManager.startAccelerometerUpdates()
+        motionManager.startGyroUpdates()
         
         loadMap()
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
@@ -49,7 +51,7 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
         recordSensorData()
     }
     
-    // Update trip duration, speed, and accelerometer labels on UI
+    // Update trip duration, speed, accelerometer, and gyro labels on UI
     func updateDataLabels() {
         secondsElapsed += 1
         let timeElapsedString = getTimeElapsedString()
@@ -65,6 +67,12 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
                 String(format: "%.2f", acceleration!.y) + ", " +
                 String(format: "%.2f", acceleration!.z)
             accelerometerLabel.text = accelerometerString
+        }
+        
+        let gyro = motionManager.gyroData?.rotationRate
+        if gyro != nil {
+            let gyroString = String(format: "%.2f", gyro!.x) + ", " + String(format: "%.2f", gyro!.y) + ", " + String(format: "%.2f", gyro!.z)
+            gyroLabel.text = gyroString
         }
     }
 
@@ -124,6 +132,17 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
             trip.addAccelerationZ(accelZ: -100.0)
         }
         
+        let gyro = motionManager.gyroData?.rotationRate
+        if gyro != nil {
+            trip.addGyroX(gyroX: gyro!.x)
+            trip.addGyroY(gyroY: gyro!.y)
+            trip.addGyroZ(gyroZ: gyro!.z)
+        } else {
+            trip.addGyroX(gyroX: -100.0)
+            trip.addGyroY(gyroY: -100.0)
+            trip.addGyroZ(gyroZ: -100.0)
+        }
+        
         let latlong = (locationManager.location?.coordinate)
         trip.addLatitude(lat: (latlong?.latitude)!)
         trip.addLongitude(long: (latlong?.longitude)!)
@@ -154,7 +173,7 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
         
         let sensorFileName = trip.name + "_sensors.csv"
         let sensorDataPath = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(sensorFileName)
-        csvText = "timestamp,latitude,longitude,speed,accelerometerX,accelerometerY,accelerometerZ\n"
+        csvText = "timestamp,latitude,longitude,speed,accelerometerX,accelerometerY,accelerometerZ,gyroX,gyroY,gyroZ\n"
         for i in 0..<trip.sensorTimestamps.count {
             let timestamp = trip.sensorTimestamps[i]
             let latitude = trip.latitudes[i]
@@ -163,9 +182,10 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
             let accelerometerX = trip.accelerationsX[i]
             let accelerometerY = trip.accelerationsY[i]
             let accelerometerZ = trip.accelerationsZ[i]
-            let newline = String(timestamp) + "," + String(latitude) + "," + String(longitude) +
-                            "," + String(speed) + "," + String(accelerometerX) +
-                            "," + String(accelerometerY) + "," + String(accelerometerZ) + "\n"
+            let gyroX = trip.gyrosX[i]
+            let gyroY = trip.gyrosY[i]
+            let gyroZ = trip.gyrosZ[i]
+            let newline = String(timestamp) + "," + String(latitude) + "," + String(longitude) + "," + String(speed) + "," + String(accelerometerX) + "," + String(accelerometerY) + "," + String(accelerometerZ) + "," + String(gyroX) + "," + String(gyroY) + "," + String(gyroZ) + "\n"
             csvText.append(contentsOf: newline.characters)
         }
         do {

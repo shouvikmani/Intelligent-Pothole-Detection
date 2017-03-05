@@ -17,6 +17,9 @@ class Trip {
     var accelerationsX = [Double]()
     var accelerationsY = [Double]()
     var accelerationsZ = [Double]()
+    var gyrosX = [Double]()
+    var gyrosY = [Double]()
+    var gyrosZ = [Double]()
     var latitudes = [Double]()
     var longitudes = [Double]()
     
@@ -58,6 +61,18 @@ class Trip {
     
     func addAccelerationZ(accelZ: Double) {
         accelerationsZ.append(accelZ)
+    }
+    
+    func addGyroX(gyroX: Double) {
+        gyrosX.append(gyroX)
+    }
+    
+    func addGyroY(gyroY: Double) {
+        gyrosY.append(gyroY)
+    }
+    
+    func addGyroZ(gyroZ: Double) {
+        gyrosZ.append(gyroZ)
     }
     
     func addLatitude(lat: Double) {
