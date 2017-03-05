@@ -23,7 +23,7 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     
     var trip: Trip!
     var dataRecipientEmail: String!
-    var secondsElapsed = 0
+    var secondsElapsed = 0.0
     var numPotholes = 0
     var locationManager: CLLocationManager = CLLocationManager()
     var motionManager = CMMotionManager()
@@ -39,7 +39,9 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
         motionManager.startGyroUpdates()
         
         loadMap()
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        
+        // Timer makes 5 calls per second to updateTime()
+        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
     
     func loadMap() {
@@ -53,7 +55,7 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     
     // Update trip duration, speed, accelerometer, and gyro labels on UI
     func updateDataLabels() {
-        secondsElapsed += 1
+        secondsElapsed += 0.2
         let timeElapsedString = getTimeElapsedString()
         durationLabel.text = String(timeElapsedString)
         
@@ -77,15 +79,16 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     }
 
     func getTimeElapsedString() -> String {
-        var seconds = String(secondsElapsed % 60)
+        let secondsElapsedInt = Int(secondsElapsed)
+        var seconds = String(secondsElapsedInt % 60)
         if (seconds.characters.count == 1) {
             seconds = "0" + seconds
         }
-        var minutes = String((secondsElapsed / 60) % 60)
+        var minutes = String((secondsElapsedInt / 60) % 60)
         if (minutes.characters.count == 1) {
             minutes = "0" + minutes
         }
-        var hours = String(secondsElapsed / 3600)
+        var hours = String(secondsElapsedInt / 3600)
         if (hours.characters.count == 1) {
             hours = "0" + hours
         }
@@ -106,8 +109,9 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     
     // Updates trip object with pothole timestamp (in UNIX time)
     func recordPotholeData() {
-        let current = NSDate().timeIntervalSince1970
-        trip.addPotholeTimestamp(timestamp: Int(current))
+        var current = NSDate().timeIntervalSince1970
+        current = (current * 10).rounded() / 10  // Round to 2 decimal places
+        trip.addPotholeTimestamp(timestamp: current)
     }
     
     // Updates trip object with sensor data (timestamp, lat/lon, 
@@ -115,8 +119,9 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     func recordSensorData() {
         
         // Timestamp in UNIX time
-        let current = NSDate().timeIntervalSince1970
-        trip.addSensorTimestamp(timestamp: Int(current))
+        var current = NSDate().timeIntervalSince1970
+        current = (current * 10).rounded() / 10  // Round to 2 decimal places
+        trip.addSensorTimestamp(timestamp: current)
         
         let currentSpeed = (locationManager.location?.speed)!
         trip.addSpeed(speed: currentSpeed)
