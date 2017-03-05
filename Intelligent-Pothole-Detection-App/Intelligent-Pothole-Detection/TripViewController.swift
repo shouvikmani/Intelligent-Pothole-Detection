@@ -45,13 +45,13 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     }
     
     func updateTime() {
-        secondsElapsed += 1
         updateDataLabels()
         recordSensorData()
     }
     
     // Update trip duration, speed, and accelerometer labels on UI
     func updateDataLabels() {
+        secondsElapsed += 1
         let timeElapsedString = getTimeElapsedString()
         durationLabel.text = String(timeElapsedString)
         
@@ -96,16 +96,19 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
         numPotholesLabel.text = String(numPotholes)
     }
     
-    // Updates trip object with pothole timestamp
+    // Updates trip object with pothole timestamp (in UNIX time)
     func recordPotholeData() {
-        trip.addPotholeTimestamp(timestamp: secondsElapsed)
+        let current = NSDate().timeIntervalSince1970
+        trip.addPotholeTimestamp(timestamp: Int(current))
     }
     
     // Updates trip object with sensor data (timestamp, lat/lon, 
     // speed, acceleration)
     func recordSensorData() {
         
-        trip.addSensorTimestamp(timestamp: secondsElapsed)
+        // Timestamp in UNIX time
+        let current = NSDate().timeIntervalSince1970
+        trip.addSensorTimestamp(timestamp: Int(current))
         
         let currentSpeed = (locationManager.location?.speed)!
         trip.addSpeed(speed: currentSpeed)
