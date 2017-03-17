@@ -29,14 +29,14 @@
 
 /* Begin PBXFileReference section */
 		030A13771E5B954300936B87 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
-		033207FD1E5ACD82000BF5C3 /* Intelligent-Pothole-Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intelligent-Pothole-Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		033207FD1E5ACD82000BF5C3 /* IPD-Training-Sensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IPD-Training-Sensors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		033208001E5ACD82000BF5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		033208021E5ACD82000BF5C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		033208051E5ACD82000BF5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		033208071E5ACD82000BF5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0332080A1E5ACD82000BF5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0332080C1E5ACD82000BF5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		033208111E5ACD82000BF5C3 /* Intelligent-Pothole-DetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intelligent-Pothole-DetectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		033208111E5ACD82000BF5C3 /* IPD-Training-SensorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IPD-Training-SensorsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		033208151E5ACD82000BF5C3 /* Intelligent_Pothole_DetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intelligent_Pothole_DetectionTests.swift; sourceTree = "<group>"; };
 		033208171E5ACD82000BF5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		039B0EC11E5D169D007FFA6A /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +63,8 @@
 		033207F41E5ACD81000BF5C3 = {
 			isa = PBXGroup;
 			children = (
-				033207FF1E5ACD82000BF5C3 /* Intelligent-Pothole-Detection */,
-				033208141E5ACD82000BF5C3 /* Intelligent-Pothole-DetectionTests */,
+				033207FF1E5ACD82000BF5C3 /* IPD-Training-Sensors */,
+				033208141E5ACD82000BF5C3 /* IPD-Training-SensorsTests */,
 				033207FE1E5ACD82000BF5C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +72,13 @@
 		033207FE1E5ACD82000BF5C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				033207FD1E5ACD82000BF5C3 /* Intelligent-Pothole-Detection.app */,
-				033208111E5ACD82000BF5C3 /* Intelligent-Pothole-DetectionTests.xctest */,
+				033207FD1E5ACD82000BF5C3 /* IPD-Training-Sensors.app */,
+				033208111E5ACD82000BF5C3 /* IPD-Training-SensorsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		033207FF1E5ACD82000BF5C3 /* Intelligent-Pothole-Detection */ = {
+		033207FF1E5ACD82000BF5C3 /* IPD-Training-Sensors */ = {
 			isa = PBXGroup;
 			children = (
 				033208001E5ACD82000BF5C3 /* AppDelegate.swift */,
@@ -90,24 +90,26 @@
 				033208091E5ACD82000BF5C3 /* LaunchScreen.storyboard */,
 				0332080C1E5ACD82000BF5C3 /* Info.plist */,
 			);
+			name = "IPD-Training-Sensors";
 			path = "Intelligent-Pothole-Detection";
 			sourceTree = "<group>";
 		};
-		033208141E5ACD82000BF5C3 /* Intelligent-Pothole-DetectionTests */ = {
+		033208141E5ACD82000BF5C3 /* IPD-Training-SensorsTests */ = {
 			isa = PBXGroup;
 			children = (
 				033208151E5ACD82000BF5C3 /* Intelligent_Pothole_DetectionTests.swift */,
 				033208171E5ACD82000BF5C3 /* Info.plist */,
 			);
+			name = "IPD-Training-SensorsTests";
 			path = "Intelligent-Pothole-DetectionTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		033207FC1E5ACD81000BF5C3 /* Intelligent-Pothole-Detection */ = {
+		033207FC1E5ACD81000BF5C3 /* IPD-Training-Sensors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0332081A1E5ACD82000BF5C3 /* Build configuration list for PBXNativeTarget "Intelligent-Pothole-Detection" */;
+			buildConfigurationList = 0332081A1E5ACD82000BF5C3 /* Build configuration list for PBXNativeTarget "IPD-Training-Sensors" */;
 			buildPhases = (
 				033207F91E5ACD81000BF5C3 /* Sources */,
 				033207FA1E5ACD81000BF5C3 /* Frameworks */,
@@ -117,14 +119,14 @@
 			);
 			dependencies = (
 			);
-			name = "Intelligent-Pothole-Detection";
+			name = "IPD-Training-Sensors";
 			productName = "Intelligent-Pothole-Detection";
-			productReference = 033207FD1E5ACD82000BF5C3 /* Intelligent-Pothole-Detection.app */;
+			productReference = 033207FD1E5ACD82000BF5C3 /* IPD-Training-Sensors.app */;
 			productType = "com.apple.product-type.application";
 		};
-		033208101E5ACD82000BF5C3 /* Intelligent-Pothole-DetectionTests */ = {
+		033208101E5ACD82000BF5C3 /* IPD-Training-SensorsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0332081D1E5ACD82000BF5C3 /* Build configuration list for PBXNativeTarget "Intelligent-Pothole-DetectionTests" */;
+			buildConfigurationList = 0332081D1E5ACD82000BF5C3 /* Build configuration list for PBXNativeTarget "IPD-Training-SensorsTests" */;
 			buildPhases = (
 				0332080D1E5ACD82000BF5C3 /* Sources */,
 				0332080E1E5ACD82000BF5C3 /* Frameworks */,
@@ -135,9 +137,9 @@
 			dependencies = (
 				033208131E5ACD82000BF5C3 /* PBXTargetDependency */,
 			);
-			name = "Intelligent-Pothole-DetectionTests";
+			name = "IPD-Training-SensorsTests";
 			productName = "Intelligent-Pothole-DetectionTests";
-			productReference = 033208111E5ACD82000BF5C3 /* Intelligent-Pothole-DetectionTests.xctest */;
+			productReference = 033208111E5ACD82000BF5C3 /* IPD-Training-SensorsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +164,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 033207F81E5ACD81000BF5C3 /* Build configuration list for PBXProject "Intelligent-Pothole-Detection" */;
+			buildConfigurationList = 033207F81E5ACD81000BF5C3 /* Build configuration list for PBXProject "IPD-Training-Sensors" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,8 +177,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				033207FC1E5ACD81000BF5C3 /* Intelligent-Pothole-Detection */,
-				033208101E5ACD82000BF5C3 /* Intelligent-Pothole-DetectionTests */,
+				033207FC1E5ACD81000BF5C3 /* IPD-Training-Sensors */,
+				033208101E5ACD82000BF5C3 /* IPD-Training-SensorsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,7 +228,7 @@
 /* Begin PBXTargetDependency section */
 		033208131E5ACD82000BF5C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 033207FC1E5ACD81000BF5C3 /* Intelligent-Pothole-Detection */;
+			target = 033207FC1E5ACD81000BF5C3 /* IPD-Training-Sensors */;
 			targetProxy = 033208121E5ACD82000BF5C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -349,7 +351,7 @@
 				DEVELOPMENT_TEAM = 42P3FE69ZL;
 				INFOPLIST_FILE = "Intelligent-Pothole-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Intelligent-Pothole-Detection";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Sensors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -362,7 +364,7 @@
 				DEVELOPMENT_TEAM = 42P3FE69ZL;
 				INFOPLIST_FILE = "Intelligent-Pothole-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Intelligent-Pothole-Detection";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Sensors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -378,7 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Intelligent-Pothole-DetectionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intelligent-Pothole-Detection.app/Intelligent-Pothole-Detection";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPD-Training-Sensors.app/IPD-Training-Sensors";
 			};
 			name = Debug;
 		};
@@ -392,14 +394,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Intelligent-Pothole-DetectionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intelligent-Pothole-Detection.app/Intelligent-Pothole-Detection";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPD-Training-Sensors.app/IPD-Training-Sensors";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		033207F81E5ACD81000BF5C3 /* Build configuration list for PBXProject "Intelligent-Pothole-Detection" */ = {
+		033207F81E5ACD81000BF5C3 /* Build configuration list for PBXProject "IPD-Training-Sensors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				033208181E5ACD82000BF5C3 /* Debug */,
@@ -408,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0332081A1E5ACD82000BF5C3 /* Build configuration list for PBXNativeTarget "Intelligent-Pothole-Detection" */ = {
+		0332081A1E5ACD82000BF5C3 /* Build configuration list for PBXNativeTarget "IPD-Training-Sensors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0332081B1E5ACD82000BF5C3 /* Debug */,
@@ -417,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0332081D1E5ACD82000BF5C3 /* Build configuration list for PBXNativeTarget "Intelligent-Pothole-DetectionTests" */ = {
+		0332081D1E5ACD82000BF5C3 /* Build configuration list for PBXNativeTarget "IPD-Training-SensorsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0332081E1E5ACD82000BF5C3 /* Debug */,

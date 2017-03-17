@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "033207FC1E5ACD81000BF5C3"
-               BuildableName = "Intelligent-Pothole-Detection.app"
-               BlueprintName = "Intelligent-Pothole-Detection"
-               ReferencedContainer = "container:Intelligent-Pothole-Detection.xcodeproj">
+               BuildableName = "IPD-Training-Sensors.app"
+               BlueprintName = "IPD-Training-Sensors"
+               ReferencedContainer = "container:IPD-Training-Sensors.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "033208101E5ACD82000BF5C3"
-               BuildableName = "Intelligent-Pothole-DetectionTests.xctest"
-               BlueprintName = "Intelligent-Pothole-DetectionTests"
-               ReferencedContainer = "container:Intelligent-Pothole-Detection.xcodeproj">
+               BuildableName = "IPD-Training-SensorsTests.xctest"
+               BlueprintName = "IPD-Training-SensorsTests"
+               ReferencedContainer = "container:IPD-Training-Sensors.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "033207FC1E5ACD81000BF5C3"
-            BuildableName = "Intelligent-Pothole-Detection.app"
-            BlueprintName = "Intelligent-Pothole-Detection"
-            ReferencedContainer = "container:Intelligent-Pothole-Detection.xcodeproj">
+            BuildableName = "IPD-Training-Sensors.app"
+            BlueprintName = "IPD-Training-Sensors"
+            ReferencedContainer = "container:IPD-Training-Sensors.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "033207FC1E5ACD81000BF5C3"
-            BuildableName = "Intelligent-Pothole-Detection.app"
-            BlueprintName = "Intelligent-Pothole-Detection"
-            ReferencedContainer = "container:Intelligent-Pothole-Detection.xcodeproj">
+            BuildableName = "IPD-Training-Sensors.app"
+            BlueprintName = "IPD-Training-Sensors"
+            ReferencedContainer = "container:IPD-Training-Sensors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "033207FC1E5ACD81000BF5C3"
-            BuildableName = "Intelligent-Pothole-Detection.app"
-            BlueprintName = "Intelligent-Pothole-Detection"
-            ReferencedContainer = "container:Intelligent-Pothole-Detection.xcodeproj">
+            BuildableName = "IPD-Training-Sensors.app"
+            BlueprintName = "IPD-Training-Sensors"
+            ReferencedContainer = "container:IPD-Training-Sensors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
