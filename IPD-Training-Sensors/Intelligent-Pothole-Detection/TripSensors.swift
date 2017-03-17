@@ -8,10 +8,9 @@
 
 import Foundation
 
-class Trip {
+class TripSensors {
     
     var name: String
-    var potholeTimestamps = [Double]()
     var sensorTimestamps = [Double]()
     var speeds = [Double]()
     var accelerationsX = [Double]()
@@ -25,14 +24,6 @@ class Trip {
     
     init(name: String) {
         self.name = name
-    }
-    
-    func getPotholeTimestamps() -> [Double] {
-        return potholeTimestamps
-    }
-    
-    func addPotholeTimestamp(timestamp: Double) {
-        potholeTimestamps.append(timestamp)
     }
     
     func getSensorTimestamps() -> [Double] {

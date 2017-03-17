@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var tripNameField: UITextField!
     
-    var trip: Trip!
+    var trip: TripSensors!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate, MKMapViewDelegate {
     private func initializeTripWithName() {
         var tripName: String!
         tripName = tripNameField.text
-        self.trip = Trip.init(name: tripName)
+        self.trip = TripSensors.init(name: tripName)
     }
     
 }

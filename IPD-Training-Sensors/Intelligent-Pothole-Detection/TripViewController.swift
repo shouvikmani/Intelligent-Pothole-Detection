@@ -16,14 +16,12 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var durationLabel: UILabel!
-    @IBOutlet weak var numPotholesLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var accelerometerLabel: UILabel!
     @IBOutlet weak var gyroLabel: UILabel!
     
-    var trip: Trip!
+    var trip: TripSensors!
     var secondsElapsed = 0.0
-    var numPotholes = 0
     var locationManager: CLLocationManager = CLLocationManager()
     var motionManager = CMMotionManager()
     
@@ -58,8 +56,7 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
         let timeElapsedString = getTimeElapsedString()
         durationLabel.text = String(timeElapsedString)
         
-        let currentSpeed = String(format: "%.2f m/s",
-            (locationManager.location?.speed)!)
+        let currentSpeed = String(format: "%.2f m/s", (locationManager.location?.speed)!)
         speedLabel.text = currentSpeed
         
         let acceleration = motionManager.accelerometerData?.acceleration
@@ -93,24 +90,6 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
         }
         let timeElapsedString = hours + ":" + minutes + ":" + seconds
         return timeElapsedString
-    }
-    
-    @IBAction func recordPotholeAndIncrementNumPotholes(_ sender: Any) {
-        incrementNumPotholes()
-        recordPotholeData()
-    }
-    
-    // Update number of potholes label on UI
-    func incrementNumPotholes() {
-        numPotholes += 1
-        numPotholesLabel.text = String(numPotholes)
-    }
-    
-    // Updates trip object with pothole timestamp (in UNIX time)
-    func recordPotholeData() {
-        var current = NSDate().timeIntervalSince1970
-        current = (current * 10).rounded() / 10  // Round to 2 decimal places
-        trip.addPotholeTimestamp(timestamp: current)
     }
     
     // Updates trip object with sensor data (timestamp, lat/lon, 
@@ -161,23 +140,9 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     
     // Sends trip data to recipient email
     func sendTripData() {
-        let potholeFileName = trip.name + "_potholes.csv"
-        let potholeDataPath = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(potholeFileName)
-        var csvText = "timestamp\n"
-        for timestamp in trip.potholeTimestamps {
-            let newline = String(timestamp) + "\n"
-            csvText.append(contentsOf: newline.characters)
-        }
-        do {
-            try csvText.write(to: potholeDataPath!, atomically: true, encoding: String.Encoding.utf8)
-        } catch {
-            print("Failed to create file")
-            print("\(error)")
-        }
-        
         let sensorFileName = trip.name + "_sensors.csv"
         let sensorDataPath = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(sensorFileName)
-        csvText = "timestamp,latitude,longitude,speed,accelerometerX,accelerometerY,accelerometerZ,gyroX,gyroY,gyroZ\n"
+        var csvText = "timestamp,latitude,longitude,speed,accelerometerX,accelerometerY,accelerometerZ,gyroX,gyroY,gyroZ\n"
         for i in 0..<trip.sensorTimestamps.count {
             let timestamp = trip.sensorTimestamps[i]
             let latitude = trip.latitudes[i]
@@ -203,9 +168,8 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
             let emailController = MFMailComposeViewController()
             emailController.mailComposeDelegate = self
             emailController.setToRecipients([])
-            emailController.setSubject("Intelligent Pothole Detection Data")
+            emailController.setSubject("Intelligent Pothole Detection Data - Sensors")
             emailController.setMessageBody("", isHTML: false)
-            emailController.addAttachmentData(NSData(contentsOf: potholeDataPath!)! as Data, mimeType: "text/csv", fileName: potholeFileName)
             emailController.addAttachmentData(NSData(contentsOf: sensorDataPath!)! as Data, mimeType: "text/csv", fileName: sensorFileName)
             present(emailController, animated: true, completion: nil)
         }

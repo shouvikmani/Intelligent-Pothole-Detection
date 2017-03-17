@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030A13781E5B954300936B87 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A13771E5B954300936B87 /* Trip.swift */; };
+		030A13781E5B954300936B87 /* TripSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A13771E5B954300936B87 /* TripSensors.swift */; };
 		033208011E5ACD82000BF5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033208001E5ACD82000BF5C3 /* AppDelegate.swift */; };
 		033208031E5ACD82000BF5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033208021E5ACD82000BF5C3 /* ViewController.swift */; };
 		033208061E5ACD82000BF5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033208041E5ACD82000BF5C3 /* Main.storyboard */; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		030A13771E5B954300936B87 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		030A13771E5B954300936B87 /* TripSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripSensors.swift; sourceTree = "<group>"; };
 		033207FD1E5ACD82000BF5C3 /* IPD-Training-Sensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IPD-Training-Sensors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		033208001E5ACD82000BF5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		033208021E5ACD82000BF5C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 				033208001E5ACD82000BF5C3 /* AppDelegate.swift */,
 				033208021E5ACD82000BF5C3 /* ViewController.swift */,
 				039B0EC11E5D169D007FFA6A /* TripViewController.swift */,
-				030A13771E5B954300936B87 /* Trip.swift */,
+				030A13771E5B954300936B87 /* TripSensors.swift */,
 				033208041E5ACD82000BF5C3 /* Main.storyboard */,
 				033208071E5ACD82000BF5C3 /* Assets.xcassets */,
 				033208091E5ACD82000BF5C3 /* LaunchScreen.storyboard */,
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030A13781E5B954300936B87 /* Trip.swift in Sources */,
+				030A13781E5B954300936B87 /* TripSensors.swift in Sources */,
 				039B0EC21E5D169D007FFA6A /* TripViewController.swift in Sources */,
 				033208031E5ACD82000BF5C3 /* ViewController.swift in Sources */,
 				033208011E5ACD82000BF5C3 /* AppDelegate.swift in Sources */,
