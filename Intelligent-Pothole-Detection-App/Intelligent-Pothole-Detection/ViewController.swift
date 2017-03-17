@@ -13,14 +13,13 @@ class ViewController: UIViewController, UITextFieldDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var tripNameField: UITextField!
-    @IBOutlet weak var dataRecipientEmailField: UITextField!
     
     var trip: Trip!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tripNameField.delegate = self
-        dataRecipientEmailField.delegate = self
+        tripNameField.borderStyle = .roundedRect;
         loadMap()
     }
 
@@ -40,10 +39,6 @@ class ViewController: UIViewController, UITextFieldDelegate, MKMapViewDelegate {
             self.initializeTripWithName()
             let controller = segue.destination as! TripViewController
             controller.trip = self.trip
-            
-            var email: String!
-            email = dataRecipientEmailField.text
-            controller.dataRecipientEmail = email
         }
     }
     

@@ -22,7 +22,6 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
     @IBOutlet weak var gyroLabel: UILabel!
     
     var trip: Trip!
-    var dataRecipientEmail: String!
     var secondsElapsed = 0.0
     var numPotholes = 0
     var locationManager: CLLocationManager = CLLocationManager()
@@ -203,7 +202,7 @@ class TripViewController: UIViewController, MKMapViewDelegate, MFMailComposeView
         if MFMailComposeViewController.canSendMail() {
             let emailController = MFMailComposeViewController()
             emailController.mailComposeDelegate = self
-            emailController.setToRecipients([dataRecipientEmail])
+            emailController.setToRecipients([])
             emailController.setSubject("Intelligent Pothole Detection Data")
             emailController.setMessageBody("", isHTML: false)
             emailController.addAttachmentData(NSData(contentsOf: potholeDataPath!)! as Data, mimeType: "text/csv", fileName: potholeFileName)
