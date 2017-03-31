@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Road Conditions Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="index.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="sidebar">
+        <div id="title" class="lead"><b>Pittsburgh Road Conditions</b></div>
+        <div id="trip-form">
+            <b>Trip</b>
+            <select id="select-trip-form" class="form-control" onchange="setSelectedTrip(this.value)">
+              <option value="0">2/22 Trip 1</option>
+              <option value="1">2/22 Trip 2</option>
+              <option value="2">2/22 Trip 3</option>
+              <option value="3" selected="selected">3/26 Trip 1</option>
+              <option value="4">3/26 Trip 2</option>
+            </select>
+            <br>
+            <b>Display</b>
+            <form>
+              <input type="radio" name="display" value="route" checked onchange="setSelectedChannel(this.value)"> Route<br>
+              <input type="radio" name="display" value="accelerationX" onchange="setSelectedChannel(this.value)"> Acceleration X heatmap<br>
+              <input type="radio" name="display" value="accelerationY" onchange="setSelectedChannel(this.value)"> Acceleration Y heatmap<br>
+              <input type="radio" name="display" value="accelerationZ" onchange="setSelectedChannel(this.value)"> Acceleration Z heatmap<br>
+              <input type="radio" name="display" value="gyroX" onchange="setSelectedChannel(this.value)"> Gyro X heatmap<br>
+              <input type="radio" name="display" value="gyroY" onchange="setSelectedChannel(this.value)"> Gyro Y heatmap<br>
+              <input type="radio" name="display" value="gyroZ" onchange="setSelectedChannel(this.value)"> Gyro Z heatmap
+            </form>
+        </div>
+    </div>
+    <script src="lib/jquery-3.2.0.min.js"></script>
+    <script src="lib/jquery.csv.min.js"></script>
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGU2-lOITiEiNpEpN-2-RIGfeLsKS-3DE&libraries=visualization&callback=initMap"
+    async defer></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
