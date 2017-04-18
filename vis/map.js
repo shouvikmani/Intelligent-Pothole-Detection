@@ -205,7 +205,8 @@ var trips = [
     {'name': '2/22 Trip 2', 'path': '../data/trip2_02-22-17_sensors.csv'},
     {'name': '2/22 Trip 3', 'path': '../data/trip3_02-22-17_sensors.csv'},
     {'name': '3/26 Trip 1', 'path': '../data/03_26_trip1_sensors.csv'},
-    {'name': '3/26 Trip 2', 'path': '../data/03_26_trip2_sensors.csv'}
+    {'name': '3/26 Trip 2', 'path': '../data/03_26_trip2_sensors.csv'},
+    {'name': '4/02 Trip 1', 'path': '../data/04_02_trip1_sensors.csv'}
 ]
 
 function plotTrip() {

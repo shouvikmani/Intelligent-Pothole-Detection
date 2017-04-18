@@ -152,7 +152,7 @@
 				TargetAttributes = {
 					031CD2731E7C39C70021278E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 42P3FE69ZL;
+						DevelopmentTeam = 9DZPLRTSQQ;
 						ProvisioningStyle = Automatic;
 					};
 					031CD2871E7C39C80021278E = {
@@ -347,7 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 42P3FE69ZL;
+				DEVELOPMENT_TEAM = 9DZPLRTSQQ;
 				INFOPLIST_FILE = "IPD-Training-Potholes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Potholes";
@@ -360,7 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 42P3FE69ZL;
+				DEVELOPMENT_TEAM = 9DZPLRTSQQ;
 				INFOPLIST_FILE = "IPD-Training-Potholes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Potholes";
