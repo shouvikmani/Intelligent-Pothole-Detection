@@ -154,7 +154,7 @@
 				TargetAttributes = {
 					033207FC1E5ACD81000BF5C3 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9DZPLRTSQQ;
+						DevelopmentTeam = 6K7V28YF7K;
 						ProvisioningStyle = Automatic;
 					};
 					033208101E5ACD82000BF5C3 = {
@@ -348,10 +348,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9DZPLRTSQQ;
+				DEVELOPMENT_TEAM = 6K7V28YF7K;
 				INFOPLIST_FILE = "Intelligent-Pothole-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Sensors";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Sensors-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -361,10 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9DZPLRTSQQ;
+				DEVELOPMENT_TEAM = 6K7V28YF7K;
 				INFOPLIST_FILE = "Intelligent-Pothole-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Sensors";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Sensors-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
