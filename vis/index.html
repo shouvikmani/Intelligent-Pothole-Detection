@@ -11,27 +11,29 @@
   <body>
     <div id="map"></div>
     <div id="sidebar">
-        <div id="title" class="lead"><b>Pittsburgh Road Conditions</b></div>
+        <br>
+        <div id="title" class="lead"><b>Road Conditions Map</b></div>
         <div id="trip-form">
             <b>Trip</b>
             <select id="select-trip-form" class="form-control" onchange="setSelectedTrip(this.value)">
-              <option value="0">2/22 Trip 1</option>
-              <option value="1">2/22 Trip 2</option>
-              <option value="2">2/22 Trip 3</option>
-              <option value="3" selected="selected">3/26 Trip 1</option>
-              <option value="4">3/26 Trip 2</option>
-              <option value="5">4/02 Trip 1</option>
+              <option value="0" selected="selected">Trip 1</option>
+              <option value="1">Trip 2</option>
+              <option value="2">Trip 3</option>
+              <option value="3">Trip 4</option>
+              <option value="4">Trip 5</option>
+              <option value="5">Trip 6</option>
             </select>
             <br>
             <b>Display</b>
             <form>
               <input type="radio" name="display" value="route" checked onchange="setSelectedChannel(this.value)"> Route<br>
-              <input type="radio" name="display" value="accelerationX" onchange="setSelectedChannel(this.value)"> Acceleration X heatmap<br>
-              <input type="radio" name="display" value="accelerationY" onchange="setSelectedChannel(this.value)"> Acceleration Y heatmap<br>
-              <input type="radio" name="display" value="accelerationZ" onchange="setSelectedChannel(this.value)"> Acceleration Z heatmap<br>
-              <input type="radio" name="display" value="gyroX" onchange="setSelectedChannel(this.value)"> Gyro X heatmap<br>
-              <input type="radio" name="display" value="gyroY" onchange="setSelectedChannel(this.value)"> Gyro Y heatmap<br>
-              <input type="radio" name="display" value="gyroZ" onchange="setSelectedChannel(this.value)"> Gyro Z heatmap
+              <input type="radio" name="display" value="potholes" onchange="setSelectedChannel(this.value)"> Potholes<br>
+              <input type="radio" name="display" value="accelerometerX" onchange="setSelectedChannel(this.value)"> Acceleration X<br>
+              <input type="radio" name="display" value="accelerometerY" onchange="setSelectedChannel(this.value)"> Acceleration Y<br>
+              <input type="radio" name="display" value="accelerometerZ" onchange="setSelectedChannel(this.value)"> Acceleration Z<br>
+              <input type="radio" name="display" value="gyroX" onchange="setSelectedChannel(this.value)"> Gyro X<br>
+              <input type="radio" name="display" value="gyroY" onchange="setSelectedChannel(this.value)"> Gyro Y<br>
+              <input type="radio" name="display" value="gyroZ" onchange="setSelectedChannel(this.value)"> Gyro Z
             </form>
         </div>
     </div>
