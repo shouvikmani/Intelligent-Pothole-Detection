@@ -11,128 +11,167 @@ function initMap() {
 
   // Map Styles
   var styledMapType = new google.maps.StyledMapType(
-      [{
-        	"elementType": "geometry",
-        	"stylers": [{
-        		"color": "#212121"
-        	}]
-        }, {
-        	"elementType": "labels.icon",
-        	"stylers": [{
-        		"visibility": "off"
-        	}]
-        }, {
-        	"elementType": "labels.text.fill",
-        	"stylers": [{
-        		"color": "#757575"
-        	}]
-        }, {
-        	"elementType": "labels.text.stroke",
-        	"stylers": [{
-        		"color": "#212121"
-        	}]
-        }, {
-        	"featureType": "administrative",
-        	"elementType": "geometry",
-        	"stylers": [{
-        		"color": "#757575"
-        	}]
-        }, {
-        	"featureType": "administrative.country",
-        	"elementType": "labels.text.fill",
-        	"stylers": [{
-        		"color": "#9e9e9e"
-        	}]
-        }, {
-        	"featureType": "administrative.land_parcel",
-        	"stylers": [{
-        		"visibility": "off"
-        	}]
-        }, {
-        	"featureType": "administrative.locality",
-        	"elementType": "labels.text.fill",
-        	"stylers": [{
-        		"color": "#bdbdbd"
-        	}]
-        }, {
-        	"featureType": "poi",
-        	"elementType": "labels.text.fill",
-        	"stylers": [{
-        		"color": "#757575"
-        	}]
-        }, {
-        	"featureType": "poi.park",
-        	"elementType": "geometry",
-        	"stylers": [{
-        		"color": "#181818"
-        	}]
-        }, {
-        	"featureType": "poi.park",
-        	"elementType": "labels.text.fill",
-        	"stylers": [{
-        		"color": "#616161"
-        	}]
-        }, {
-        	"featureType": "poi.park",
-        	"elementType": "labels.text.stroke",
-        	"stylers": [{
-        		"color": "#1b1b1b"
-        	}]
-        }, {
-        	"featureType": "road",
-        	"elementType": "geometry.fill",
-        	"stylers": [{
-        		"color": "#2c2c2c"
-        	}]
-        }, {
-        	"featureType": "road",
-        	"elementType": "labels.text.fill",
-        	"stylers": [{
-        		"color": "#8a8a8a"
-        	}]
-        }, {
-        	"featureType": "road.arterial",
-        	"elementType": "geometry",
-        	"stylers": [{
-        		"color": "#373737"
-        	}]
-        }, {
-        	"featureType": "road.highway",
-        	"elementType": "geometry",
-        	"stylers": [{
-        		"color": "#3c3c3c"
-        	}]
-        }, {
-        	"featureType": "road.highway.controlled_access",
-        	"elementType": "geometry",
-        	"stylers": [{
-        		"color": "#4e4e4e"
-        	}]
-        }, {
-        	"featureType": "road.local",
-        	"elementType": "labels.text.fill",
-        	"stylers": [{
-        		"color": "#616161"
-        	}]
-        }, {
-        	"featureType": "transit",
-        	"elementType": "labels.text.fill",
-        	"stylers": [{
-        		"color": "#757575"
-        	}]
-        }, {
-        	"featureType": "water",
-        	"elementType": "geometry",
-        	"stylers": [{
-        		"color": "#000000"
-        	}]
-        }, {
-        	"featureType": "water",
-        	"elementType": "labels.text.fill",
-        	"stylers": [{
-        		"color": "#3d3d3d"
-        	}]
-    }]);
+      [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#242f3e"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#746855"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#242f3e"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.locality",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#d59563"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#d59563"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#263c3f"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#6b9a76"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#38414e"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "color": "#212a37"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9ca5b3"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#746855"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "color": "#1f2835"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#f3d19c"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#2f3948"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#d59563"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#17263c"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#515c6d"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#17263c"
+              }
+            ]
+          }
+      ]);
 
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
@@ -145,59 +184,24 @@ function loadCSVData(path, callback) {
       url: path,
       dataType: "text",
       success: function(data) {
-
           callback($.csv.toObjects(data));
       }
    });
 }
 
-var routePath;
-var heatmap;
-var markers;
-
-function plotTripRoute(data) {
-    if (routePath != null) {
-        routePath.setMap(null);
-    }
-    if (heatmap != null) {
-        heatmap.setMap(null);
-    }
-    if (markers != null) {
-        clearMarkers();
-    }
-    routeCoordinates = [];
-    for (var i = 0; i < data.length; i++) {
-        routeCoordinates.push({
-           lat: Number(data[i]['latitude']),
-           lng: Number(data[i]['longitude'])
-        });
-    }
-    routePath = new google.maps.Polyline({
-        path: routeCoordinates,
-        geodesic: true,
-        strokeColor: '#00BFFF',
-        strokeOpacity: 1.0,
-        strokeWeight: 5
-    });
-    routePath.setMap(map);
-}
+var routes = [];
+var markers = [];
 
 function plotTripPotholes(data) {
-    if (routePath != null) {
-        // Plot new trip (sometimes necessary)
-        plotTripRoute(data);
+    if (selectedChannel != 'both') {
+        clearRoutes();
     }
-    if (heatmap != null) {
-        heatmap.setMap(null);
-    }
-    if (markers != null) {
-        clearMarkers();
-    }
-    markers = []
+    clearMarkers();
+
     for (var i = 0; i < data.length; i++) {
-        if (data[i]['potholes'] == "True") {
-            lat = data[i]['latitude'];
-            lng = data[i]['longitude'];
+        if (data[i][' classification'] == "1.0") {
+            lat = data[i][' latitude'];
+            lng = data[i][' longitude'];
             var markerLocation = new google.maps.LatLng(lat, lng);
             var marker = new google.maps.Marker({
                 position: markerLocation,
@@ -206,7 +210,7 @@ function plotTripPotholes(data) {
                     strokeColor: '#FFFFFF',
                     fillColor: '#FF0000',
                     fillOpacity: 1,
-                    scale: 8,
+                    scale: 6,
                     strokeWeight: 2
                 }
             });
@@ -216,51 +220,58 @@ function plotTripPotholes(data) {
     }
 }
 
-function plotTripHeatmap(data) {
-    if (routePath != null) {
-        routePath.setMap(null);
-    }
-    if (markers != null) {
+function plotTripRoadConditions(data) {
+    clearRoutes();
+    if (selectedChannel != 'both') {
         clearMarkers();
     }
 
-    allValues = [];
+    var intervals = []
+    var intervalClassifications = {};
     for (var i = 0; i < data.length; i++) {
-        allValues.push(Number(data[i][selectedChannel]));
+        intervals.push(data[i]['interval'])
+        intervalClassifications[data[i]['interval']] = data[i][' classification'];
     }
-    max = Math.max(...allValues);
-    min = Math.min(...allValues);
 
-    markers = [];
-    intervalLength = 10;   // (2 seconds)
-    pointsTillNextInterval = intervalLength;
-    valuesInInterval = [];
+    var routeCoordinates = [];
+    var lastInterval = intervals[0];
     for (var i = 0; i < data.length; i++) {
-        pointsTillNextInterval--;
-        valuesInInterval.push(Number(data[i][selectedChannel]));
-        if (pointsTillNextInterval == 0) {
-            averageValue = average(valuesInInterval);
-            normalizedValue = normalize(averageValue, min, max);
-            color = perc2color(normalizedValue);
-            lat = data[i]['latitude'];
-            lng = data[i]['longitude'];
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(lat, lng),
-                icon: {
-                    path: google.maps.SymbolPath.CIRCLE,
-                    strokeColor: '#FFFFFF',
-                    fillColor: color,
-                    fillOpacity: 1,
-                    scale: 8,
-                    strokeWeight: 2
-                }
+        var currentInterval = data[i]['interval'];
+        if (lastInterval != currentInterval) {
+            var classification = intervalClassifications[lastInterval];
+            var classColor = getRouteColor(classification);
+            var routePath = new google.maps.Polyline({
+                path: routeCoordinates,
+                geodesic: true,
+                strokeColor: classColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 5
             });
-            markers.push(marker);
-            marker.setMap(map);
-            pointsTillNextInterval = intervalLength;
-            valuesInInterval = [];
+            routes.push(routePath);
+            routePath.setMap(map);
+            routeCoordinates = [];
+            lastInterval = currentInterval;
         }
+        routeCoordinates.push({
+           lat: Number(data[i][' latitude']),
+           lng: Number(data[i][' longitude'])
+        });
     }
+}
+
+function getRouteColor(classification) {
+    if (classification == "0.0") {
+        return "#00FF00";
+    } else {
+        return "#FF0000";
+    }
+}
+
+function clearRoutes() {
+    for (var i = 0; i < routes.length; i++) {
+        routes[i].setMap(null);
+    }
+    routes = [];
 }
 
 function clearMarkers() {
@@ -270,51 +281,18 @@ function clearMarkers() {
     markers = [];
 }
 
-function average(values) {
-    var sum = 0;
-    for (var i = 0; i < values.length; i++) {
-        sum = sum + values[i];
-    }
-    return sum/values.length;
-}
-
-function normalize(value, min, max) {
-    return ((value - min) / (max - min)) * 100;
-}
-
-// Source: https://gist.github.com/mlocati/7210513
-// Input: Number between 0 and 100
-// Output: Color between red and green
-function perc2color(perc) {
-	var r, g, b = 0;
-	if(perc < 50) {
-		r = 255;
-		g = Math.round(5.1 * perc);
-	}
-	else {
-		g = 255;
-		r = Math.round(510 - 5.10 * perc);
-	}
-	var h = r * 0x10000 + g * 0x100 + b * 0x1;
-	return '#' + ('000000' + h.toString(16)).slice(-6);
-}
-
 var trips = [
-    {'name': '2/22 Trip 1', 'path': '../data/Final_Route/t1_combined.csv'},
-    {'name': '2/22 Trip 2', 'path': '../data/Final_Route/t2_combined.csv'},
-    {'name': '2/22 Trip 3', 'path': '../data/Final_Route/t3-cc25_combined.csv'},
-    {'name': '3/26 Trip 1', 'path': '../data/Final_Route/t4-25ub_combined.csv'},
-    {'name': '3/26 Trip 2', 'path': '../data/Final_Route/t5-avoid_combined.csv'},
-    {'name': '4/02 Trip 1', 'path': '../data/Final_Route/t6-random_combined.csv'}
+    {'name': 'Trip 1', 'potholes': 'data/trip1_potholesIntervals.csv', 'roadConditions': 'data/trip1_roadConditionsIntervals.csv'}
 ]
 
 function plotTrip() {
-    if (selectedChannel == 'route') {
-        loadCSVData(selectedTrip['path'], plotTripRoute);
-    } else if (selectedChannel == 'potholes') {
-        loadCSVData(selectedTrip['path'], plotTripPotholes);
-    } else {
-        loadCSVData(selectedTrip['path'], plotTripHeatmap);
+    if (selectedChannel == 'potholes') {
+        loadCSVData(selectedTrip['potholes'], plotTripPotholes);
+    } else if (selectedChannel == 'roadConditions') {
+        loadCSVData(selectedTrip['roadConditions'], plotTripRoadConditions);
+    } else if (selectedChannel == 'both') {
+        loadCSVData(selectedTrip['roadConditions'], plotTripRoadConditions);
+        loadCSVData(selectedTrip['potholes'], plotTripPotholes);
     }
 }
 
@@ -330,5 +308,5 @@ function setSelectedChannel(newChannel) {
 
 //Defaults
 var selectedTrip = trips[0];
-var selectedChannel = 'route';
+var selectedChannel = 'roadConditions';
 plotTrip();

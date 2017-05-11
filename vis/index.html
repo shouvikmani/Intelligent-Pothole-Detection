@@ -12,28 +12,24 @@
     <div id="map"></div>
     <div id="sidebar">
         <br>
-        <div id="title" class="lead"><b>Road Conditions Map</b></div>
+        <div id="title" class="lead"><b>Citywide Potholes
+            <br> and Road Conditions</b></div>
         <div id="trip-form">
             <b>Trip</b>
             <select id="select-trip-form" class="form-control" onchange="setSelectedTrip(this.value)">
               <option value="0" selected="selected">Trip 1</option>
-              <option value="1">Trip 2</option>
+              <!-- <option value="1">Trip 2</option>
               <option value="2">Trip 3</option>
               <option value="3">Trip 4</option>
               <option value="4">Trip 5</option>
-              <option value="5">Trip 6</option>
+              <option value="5">Trip 6</option> -->
             </select>
             <br>
-            <b>Display</b>
+            <b>Data</b>
             <form>
-              <input type="radio" name="display" value="route" checked onchange="setSelectedChannel(this.value)"> Route<br>
               <input type="radio" name="display" value="potholes" onchange="setSelectedChannel(this.value)"> Potholes<br>
-              <input type="radio" name="display" value="accelerometerX" onchange="setSelectedChannel(this.value)"> Acceleration X<br>
-              <input type="radio" name="display" value="accelerometerY" onchange="setSelectedChannel(this.value)"> Acceleration Y<br>
-              <input type="radio" name="display" value="accelerometerZ" onchange="setSelectedChannel(this.value)"> Acceleration Z<br>
-              <input type="radio" name="display" value="gyroX" onchange="setSelectedChannel(this.value)"> Gyro X<br>
-              <input type="radio" name="display" value="gyroY" onchange="setSelectedChannel(this.value)"> Gyro Y<br>
-              <input type="radio" name="display" value="gyroZ" onchange="setSelectedChannel(this.value)"> Gyro Z
+              <input type="radio" name="display" value="roadConditions" checked onchange="setSelectedChannel(this.value)"> Road Conditions<br>
+              <input type="radio" name="display" value="both" onchange="setSelectedChannel(this.value)"> Both<br>
             </form>
         </div>
     </div>
