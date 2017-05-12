@@ -12,32 +12,33 @@
     <div id="map"></div>
     <div id="sidebar">
         <br>
-        <div id="title" class="lead"><b>Citywide Potholes
-            <br> and Road Conditions</b></div>
+        <div id="title" class="lead"><b>Citywide Potholes and <br> Road Conditions Map</b></div>
         <div id="trip-form">
             <b>Trip</b>
             <select id="select-trip-form" class="form-control" onchange="setSelectedTrip(this.value)">
-              <option value="0" selected="selected">Trip 1</option>
-              <!-- <option value="1">Trip 2</option>
+              <option value="-1" selected="selected">All trips</option>
+              <option value="0">Trip 1</option>
+              <option value="1">Trip 2</option>
               <option value="2">Trip 3</option>
               <option value="3">Trip 4</option>
               <option value="4">Trip 5</option>
-              <option value="5">Trip 6</option> -->
+              <!-- <option value="5">Trip 6</option> -->
             </select>
             <br>
             <b>Data</b>
             <form>
               <input type="radio" name="display" value="potholes" onchange="setSelectedChannel(this.value)"> Potholes<br>
-              <input type="radio" name="display" value="roadConditions" checked onchange="setSelectedChannel(this.value)"> Road Conditions<br>
-              <input type="radio" name="display" value="both" onchange="setSelectedChannel(this.value)"> Both<br>
+              <input type="radio" name="display" value="roadConditions" onchange="setSelectedChannel(this.value)"> Road Conditions<br>
+              <input type="radio" name="display" value="both" checked onchange="setSelectedChannel(this.value)"> Both<br>
             </form>
         </div>
+        <img id="legend" src="static/legend.svg">
     </div>
     <script src="lib/jquery-3.2.0.min.js"></script>
     <script src="lib/jquery.csv.min.js"></script>
     <script src="map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGU2-lOITiEiNpEpN-2-RIGfeLsKS-3DE&libraries=visualization&callback=initMap"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGU2-lOITiEiNpEpN-2-RIGfeLsKS-3DE&libraries=visualization&callback=initMap"></script>
+    <script src="mapData.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>

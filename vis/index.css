@@ -13,7 +13,7 @@ html, body {
     background-color: #fdfdfd;
     top:20px;
     right: 20px;
-    height: 280px;
+    height: 390px;
     width: 300px;
     box-shadow: 2px 2px 2px #888888;
 }
@@ -25,4 +25,8 @@ html, body {
 #trip-form {
     padding-left: 20px;
     width: 250px;
+}
+
+#legend {
+    width: 80%;
 }
