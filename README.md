@@ -1,5 +1,5 @@
 # Intelligent-Pothole-Detection
-A system for real-time pothole detection. Documents containing exploratory data analysis, classification, as well as validation, in addition to a realtime iPhone classifier. 
+A system for real-time pothole detection. Jupyter notebooks documenting data collection, EDA, and classification, a realtime iPhone classifier, as well as a paper of our results. 
 
 ## /app: 
   data and files that comprise a realtime iOS classifier built from our classification work
