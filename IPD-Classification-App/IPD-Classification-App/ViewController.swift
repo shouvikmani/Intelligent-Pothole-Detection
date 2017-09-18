@@ -9,17 +9,21 @@
 import UIKit
 import MapKit
 import Foundation
+import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var mapView: MKMapView!
+    
+    var locationManager: CLLocationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicator.hidesWhenStopped = true
+        locationManager.requestWhenInUseAuthorization()
         loadMap()
+        activityIndicator.hidesWhenStopped = true
     }
     
     func loadMap() {
