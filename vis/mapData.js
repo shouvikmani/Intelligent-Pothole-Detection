@@ -102,7 +102,13 @@ var trips = [
     {'name': 'Trip 8', 'potholes': 'data/trip8_potholesIntervals.csv', 'roadConditions': 'data/trip8_roadConditionsIntervals.csv'},
     {'name': 'Trip 9', 'potholes': 'data/trip9_potholesIntervals.csv', 'roadConditions': 'data/trip9_roadConditionsIntervals.csv'},
     {'name': 'Trip 10', 'potholes': 'data/trip10_potholesIntervals.csv', 'roadConditions': 'data/trip10_roadConditionsIntervals.csv'},
-    {'name': 'Trip 11', 'potholes': 'data/trip11_potholesIntervals.csv', 'roadConditions': 'data/trip11_roadConditionsIntervals.csv'}
+    {'name': 'Trip 11', 'potholes': 'data/trip11_potholesIntervals.csv', 'roadConditions': 'data/trip11_roadConditionsIntervals.csv'},
+    {'name': 'Trip 12', 'potholes': 'data/trip12_potholesIntervals.csv', 'roadConditions': 'data/trip12_roadConditionsIntervals.csv'},
+    {'name': 'Trip 13', 'potholes': 'data/trip13_potholesIntervals.csv', 'roadConditions': 'data/trip13_roadConditionsIntervals.csv'},
+    {'name': 'Trip 14', 'potholes': 'data/trip14_potholesIntervals.csv', 'roadConditions': 'data/trip14_roadConditionsIntervals.csv'},
+    {'name': 'Trip 15', 'potholes': 'data/trip15_potholesIntervals.csv', 'roadConditions': 'data/trip15_roadConditionsIntervals.csv'},
+    {'name': 'Trip 16', 'potholes': 'data/trip16_potholesIntervals.csv', 'roadConditions': 'data/trip16_roadConditionsIntervals.csv'},
+    {'name': 'Trip 17', 'potholes': 'data/trip17_potholesIntervals.csv', 'roadConditions': 'data/trip17_roadConditionsIntervals.csv'}
 ]
 
 function plotTrip() {
