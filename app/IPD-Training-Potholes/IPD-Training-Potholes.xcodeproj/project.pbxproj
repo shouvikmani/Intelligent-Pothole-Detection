@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031CD2781E7C39C70021278E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031CD2771E7C39C70021278E /* AppDelegate.swift */; };
+		031CD27A1E7C39C70021278E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031CD2791E7C39C70021278E /* ViewController.swift */; };
+		031CD27D1E7C39C70021278E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031CD27B1E7C39C70021278E /* Main.storyboard */; };
+		031CD27F1E7C39C80021278E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031CD27E1E7C39C80021278E /* Assets.xcassets */; };
+		031CD2821E7C39C80021278E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031CD2801E7C39C80021278E /* LaunchScreen.storyboard */; };
+		031CD28D1E7C39C80021278E /* IPD_Training_PotholesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031CD28C1E7C39C80021278E /* IPD_Training_PotholesTests.swift */; };
+		031CD2981E7C3B770021278E /* TripPotholes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031CD2971E7C3B770021278E /* TripPotholes.swift */; };
+		031CD29A1E7C3BBF0021278E /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031CD2991E7C3BBF0021278E /* TripViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		031CD2891E7C39C80021278E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 031CD26C1E7C39C70021278E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 031CD2731E7C39C70021278E;
+			remoteInfo = "IPD-Training-Potholes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031CD2741E7C39C70021278E /* IPD-Training-Potholes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IPD-Training-Potholes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		031CD2771E7C39C70021278E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		031CD2791E7C39C70021278E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		031CD27C1E7C39C70021278E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		031CD27E1E7C39C80021278E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		031CD2811E7C39C80021278E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		031CD2831E7C39C80021278E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031CD2881E7C39C80021278E /* IPD-Training-PotholesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IPD-Training-PotholesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		031CD28C1E7C39C80021278E /* IPD_Training_PotholesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPD_Training_PotholesTests.swift; sourceTree = "<group>"; };
+		031CD28E1E7C39C80021278E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031CD2971E7C3B770021278E /* TripPotholes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripPotholes.swift; sourceTree = "<group>"; };
+		031CD2991E7C3BBF0021278E /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		031CD2711E7C39C70021278E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031CD2851E7C39C80021278E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		031CD26B1E7C39C70021278E = {
+			isa = PBXGroup;
+			children = (
+				031CD2761E7C39C70021278E /* IPD-Training-Potholes */,
+				031CD28B1E7C39C80021278E /* IPD-Training-PotholesTests */,
+				031CD2751E7C39C70021278E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		031CD2751E7C39C70021278E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				031CD2741E7C39C70021278E /* IPD-Training-Potholes.app */,
+				031CD2881E7C39C80021278E /* IPD-Training-PotholesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		031CD2761E7C39C70021278E /* IPD-Training-Potholes */ = {
+			isa = PBXGroup;
+			children = (
+				031CD2771E7C39C70021278E /* AppDelegate.swift */,
+				031CD2791E7C39C70021278E /* ViewController.swift */,
+				031CD2991E7C3BBF0021278E /* TripViewController.swift */,
+				031CD2971E7C3B770021278E /* TripPotholes.swift */,
+				031CD27B1E7C39C70021278E /* Main.storyboard */,
+				031CD27E1E7C39C80021278E /* Assets.xcassets */,
+				031CD2801E7C39C80021278E /* LaunchScreen.storyboard */,
+				031CD2831E7C39C80021278E /* Info.plist */,
+			);
+			path = "IPD-Training-Potholes";
+			sourceTree = "<group>";
+		};
+		031CD28B1E7C39C80021278E /* IPD-Training-PotholesTests */ = {
+			isa = PBXGroup;
+			children = (
+				031CD28C1E7C39C80021278E /* IPD_Training_PotholesTests.swift */,
+				031CD28E1E7C39C80021278E /* Info.plist */,
+			);
+			path = "IPD-Training-PotholesTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		031CD2731E7C39C70021278E /* IPD-Training-Potholes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031CD2911E7C39C80021278E /* Build configuration list for PBXNativeTarget "IPD-Training-Potholes" */;
+			buildPhases = (
+				031CD2701E7C39C70021278E /* Sources */,
+				031CD2711E7C39C70021278E /* Frameworks */,
+				031CD2721E7C39C70021278E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IPD-Training-Potholes";
+			productName = "IPD-Training-Potholes";
+			productReference = 031CD2741E7C39C70021278E /* IPD-Training-Potholes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		031CD2871E7C39C80021278E /* IPD-Training-PotholesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031CD2941E7C39C80021278E /* Build configuration list for PBXNativeTarget "IPD-Training-PotholesTests" */;
+			buildPhases = (
+				031CD2841E7C39C80021278E /* Sources */,
+				031CD2851E7C39C80021278E /* Frameworks */,
+				031CD2861E7C39C80021278E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				031CD28A1E7C39C80021278E /* PBXTargetDependency */,
+			);
+			name = "IPD-Training-PotholesTests";
+			productName = "IPD-Training-PotholesTests";
+			productReference = 031CD2881E7C39C80021278E /* IPD-Training-PotholesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		031CD26C1E7C39C70021278E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shouvik Mani";
+				TargetAttributes = {
+					031CD2731E7C39C70021278E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9DZPLRTSQQ;
+						ProvisioningStyle = Automatic;
+					};
+					031CD2871E7C39C80021278E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 42P3FE69ZL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 031CD2731E7C39C70021278E;
+					};
+				};
+			};
+			buildConfigurationList = 031CD26F1E7C39C70021278E /* Build configuration list for PBXProject "IPD-Training-Potholes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 031CD26B1E7C39C70021278E;
+			productRefGroup = 031CD2751E7C39C70021278E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				031CD2731E7C39C70021278E /* IPD-Training-Potholes */,
+				031CD2871E7C39C80021278E /* IPD-Training-PotholesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		031CD2721E7C39C70021278E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031CD2821E7C39C80021278E /* LaunchScreen.storyboard in Resources */,
+				031CD27F1E7C39C80021278E /* Assets.xcassets in Resources */,
+				031CD27D1E7C39C70021278E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031CD2861E7C39C80021278E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		031CD2701E7C39C70021278E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031CD2981E7C3B770021278E /* TripPotholes.swift in Sources */,
+				031CD29A1E7C3BBF0021278E /* TripViewController.swift in Sources */,
+				031CD27A1E7C39C70021278E /* ViewController.swift in Sources */,
+				031CD2781E7C39C70021278E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031CD2841E7C39C80021278E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031CD28D1E7C39C80021278E /* IPD_Training_PotholesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		031CD28A1E7C39C80021278E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 031CD2731E7C39C70021278E /* IPD-Training-Potholes */;
+			targetProxy = 031CD2891E7C39C80021278E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		031CD27B1E7C39C70021278E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				031CD27C1E7C39C70021278E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		031CD2801E7C39C80021278E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				031CD2811E7C39C80021278E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		031CD28F1E7C39C80021278E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		031CD2901E7C39C80021278E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		031CD2921E7C39C80021278E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9DZPLRTSQQ;
+				INFOPLIST_FILE = "IPD-Training-Potholes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Potholes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		031CD2931E7C39C80021278E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9DZPLRTSQQ;
+				INFOPLIST_FILE = "IPD-Training-Potholes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-Potholes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		031CD2951E7C39C80021278E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 42P3FE69ZL;
+				INFOPLIST_FILE = "IPD-Training-PotholesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-PotholesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPD-Training-Potholes.app/IPD-Training-Potholes";
+			};
+			name = Debug;
+		};
+		031CD2961E7C39C80021278E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 42P3FE69ZL;
+				INFOPLIST_FILE = "IPD-Training-PotholesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.IPD-Training-PotholesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPD-Training-Potholes.app/IPD-Training-Potholes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		031CD26F1E7C39C70021278E /* Build configuration list for PBXProject "IPD-Training-Potholes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031CD28F1E7C39C80021278E /* Debug */,
+				031CD2901E7C39C80021278E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031CD2911E7C39C80021278E /* Build configuration list for PBXNativeTarget "IPD-Training-Potholes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031CD2921E7C39C80021278E /* Debug */,
+				031CD2931E7C39C80021278E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031CD2941E7C39C80021278E /* Build configuration list for PBXNativeTarget "IPD-Training-PotholesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031CD2951E7C39C80021278E /* Debug */,
+				031CD2961E7C39C80021278E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 031CD26C1E7C39C70021278E /* Project object */;
+}
